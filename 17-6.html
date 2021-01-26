@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+          <article>
+              <h3>article-1</h3>
+              <p class="author">author-1</p>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facilis cum odit ipsam, voluptate distinctio libero illo pariatur similique qui, rerum nulla. Iusto rem hic alias inventore, aliquid quas. Amet?</p>
+          </article>
+          <article>
+              <h3>article-2</h3>
+              <p class="author">author-2</p>
+              <p class="description">Quidem, voluptas maiores enim odio dolores sint numquam reiciendis ducimus esse rem, minus natus voluptatibus eos beatae quam ab sequi! Obcaecati veniam quae esse doloremque soluta nobis voluptatibus provident consequuntur.</p>
+          </article>
+          <article>
+              <h3>article-3</h3>
+              <p class="author">author-3</p>
+              <p class="description">Magnam, excepturi reiciendis. Mollitia sed eius id, consectetur animi aspernatur nesciunt expedita sunt sequi veritatis cum dolorum, adipisci quia cumque vero harum magni cupiditate suscipit vitae hic minus, voluptas possimus!</p>
+          </article>
+        </section>
+    </main>
+
+    <script>
+        var authors = document.getElementsByClassName('author');
+        for(var i = 0; i< authors.length; i++){
+            var element = authors[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 'writer' + (i + 1);
+            element.style.backgroundColor = 'blue';
+            element.style.margin = '10px';
+        }
+    </script>
+</body>
+</html>
